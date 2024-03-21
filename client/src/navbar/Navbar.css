@@ -1,0 +1,99 @@
+/* Navbar Styles */
+.header {
+    /* background-color: #060000; */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 70px  ;
+    background-color: black;
+  }
+  .header-bg {
+    background-color: black;
+    transition: 0.5s;
+  }
+  .nav-menu {
+    display: flex;
+  }
+  ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+  }
+  
+  .nav-menu li {
+    padding: 0 1rem;
+  }
+  li{
+    text-decoration: none;
+    color: brown;
+  }
+  .nav-menu li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .hamburger{
+      display: none;
+  }
+  n
+  /* Navbar Link Styles */
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: #75fa27;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Styling */
+  @media only screen and (max-width: 1040px) {
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      z-index: -3;
+      transition: 0.5s;
+    }
+  
+    .nav-menu.active{
+      left: 0;
+    }
+  
+    .nav-menu li {
+      padding: 1rem 0;
+    }
+    .nav-menu li a {
+      font-size: 2rem;
+    }
+    .hamburger{
+      display: initial;
+  }
+  }
+  h1,
+h4,
+p,
+a {
+  color: wheat;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}

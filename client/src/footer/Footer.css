@@ -1,0 +1,48 @@
+/* Add this CSS to your existing stylesheet or create a new one */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .left,
+  .right {
+    width: 48%; /* Adjust the width as needed */
+  }
+  
+  .location,
+  .phone,
+  .mail {
+    margin-bottom: 1rem;
+  }
+  
+  h4,
+  h6 {
+    margin-bottom: 1rem;
+  }
+  
+  .social {
+    display: flex;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media only screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .left,
+    .right {
+      width: 100%;
+    }
+  }
+  
